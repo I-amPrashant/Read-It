@@ -10,14 +10,14 @@ export default function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route path="/" element={<HomeNews/>} exact/>
-          <Route path="/business" element={<HomeNews/>} exact/>
-          <Route path="/entertainment" element={<HomeNews/>} exact/>
-          <Route path="/lifestyle" element={<HomeNews/>} exact/>
-          <Route path="/politics" element={<HomeNews/>} exact/>
-          <Route path="/science" element={<HomeNews/>} exact/>
-          <Route path="/sports" element={<HomeNews/>} exact/>
-          <Route path="/technology" element={<HomeNews/>} exact/>
+          <Route path="/Read-It/" element={<HomeNews key={1}/>} />
+          <Route path="/Read-It/business" element={<HomeNews key={2}/>} />
+          <Route path="/Read-It/entertainment" element={<HomeNews key={3}/>} />
+          <Route path="/Read-It/lifestyle" element={<HomeNews key={4}/>} />
+          <Route path="/Read-It/politics" element={<HomeNews key={5}/>} />
+          <Route path="/Read-It/science" element={<HomeNews key={6}/>} />
+          <Route path="/Read-It/sports" element={<HomeNews key={7}/>} />
+          <Route path="/Read-It/technology" element={<HomeNews key={8}/>} />
         </Routes>
       </Router>
      </GlobalProvider>
