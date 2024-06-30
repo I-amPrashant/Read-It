@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import NewsItem from "./NewsItem";
 import { GlobalContext } from "./GlobalState";
 import UseApiCallHook from "./UseApiCallHook";
+import loadingImage from "../assets/loading.gif";
 
 export default function HomeNews() {
   const { categoryName} = useContext(GlobalContext);
@@ -18,7 +19,7 @@ export default function HomeNews() {
           <div className="px-3 sm:px-8 py-10 h-[400px] flex justify-center items-center">
             <img
               className="h-8"
-              src="/src/assets/loading.gif"
+              src={loadingImage}
               alt="Loading..."
             />
           </div>
@@ -36,7 +37,7 @@ export default function HomeNews() {
                 }
               })}
             </div>
-            {loading && <p className="my-5"><img src="/src/assets/loading.gif" alt="Loading..." className="h-8 mx-auto"/></p>}
+            {loading && <p className="my-5"><img src={loadingImage} alt="Loading..." className="h-8 mx-auto"/></p>}
           </div>
         )
       ) : (
