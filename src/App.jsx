@@ -7,7 +7,7 @@ import { GlobalProvider } from "./components/GlobalState";
 export default function App() {
   return (
     <GlobalProvider>
-      <Router>
+      <Router basename="/Read-It">
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<HomeNews key={1}/>} />
