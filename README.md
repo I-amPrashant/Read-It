@@ -26,3 +26,4 @@ Usage
 1. Open your browser and navigate to http://localhost:3000.
 2. Use the search bar at the top to search for news articles.
 3. Use the dropdown menus on the left to filter articles by topic and country.
+
