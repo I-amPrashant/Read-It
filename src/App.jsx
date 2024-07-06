@@ -7,17 +7,17 @@ import { GlobalProvider } from "./components/GlobalState";
 export default function App() {
   return (
     <GlobalProvider>
-      <Router>
+      <Router basename="/Read-It">
         <Navbar/>
         <Routes>
-          <Route path="/Read-It/" element={<HomeNews key={1}/>} />
-          <Route path="/Read-It/business" element={<HomeNews key={2}/>} />
-          <Route path="/Read-It/entertainment" element={<HomeNews key={3}/>} />
-          <Route path="/Read-It/lifestyle" element={<HomeNews key={4}/>} />
-          <Route path="/Read-It/politics" element={<HomeNews key={5}/>} />
-          <Route path="/Read-It/science" element={<HomeNews key={6}/>} />
-          <Route path="/Read-It/sports" element={<HomeNews key={7}/>} />
-          <Route path="/Read-It/technology" element={<HomeNews key={8}/>} />
+          <Route exact path="/" element={<HomeNews key={1}/>} />
+          <Route path="/business" element={<HomeNews key={2}/>} />
+          <Route path="/entertainment" element={<HomeNews key={3}/>} />
+          <Route path="/lifestyle" element={<HomeNews key={4}/>} />
+          <Route path="/politics" element={<HomeNews key={5}/>} />
+          <Route path="/science" element={<HomeNews key={6}/>} />
+          <Route path="/sports" element={<HomeNews key={7}/>} />
+          <Route path="/technology" element={<HomeNews key={8}/>} />
         </Routes>
       </Router>
      </GlobalProvider>

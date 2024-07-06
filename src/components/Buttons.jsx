@@ -22,9 +22,9 @@ export default function Buttons(props) {
         }
 let path="";
         if(props.category==='general'){
-          path=`/Read-It/`
+          path=`/`
         }else{
-          path=`/Read-It/${props.category}`
+          path=`/${props.category}`
         }
 
         const currentStyle=isHovered || props.categoryName===props.category ?hoverTheme:theme;
