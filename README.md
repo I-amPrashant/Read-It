@@ -15,14 +15,14 @@ A web application that displays news articles, allowing users to browse and filt
 1. Clone the repository:
 git clone https://github.com/I-amPrashant/Read-It.git
 
-## Install dependencies:
+Install dependencies:
 cd Read-It
 npm install
 
 Start the development server:
 npm start
 
-Usage
+## Usage
 1. Open your browser and navigate to http://localhost:3000.
 2. Use the search bar at the top to search for news articles.
 3. Use the dropdown menus on the left to filter articles by topic and country.
