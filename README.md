@@ -15,7 +15,7 @@ A web application that displays news articles, allowing users to browse and filt
 1. Clone the repository:
 git clone https://github.com/I-amPrashant/Read-It.git
 
-Install dependencies:
+## Install dependencies:
 cd Read-It
 npm install
 
